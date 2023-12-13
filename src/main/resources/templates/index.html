@@ -1,0 +1,151 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" th:href="@{/favicon/favicon.ico}">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+    integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+  <title>GitHub Classroom Steps</title>
+</head>
+
+<body>
+
+  <div class="banner">
+    <h1 class="banner-head">
+      GitHub Classroom<br>
+      Framework for Spring boot.
+    </h1>
+  </div>
+  <div class="l-content">
+    <div class="information pure-g">
+      <div class="pure-u-1">
+        <div class="l-box">
+          <h1 class="information-head">Class roomの課題</h1>
+          <p>レベル１（基礎）</p>
+          <p>実際に動作するベースプログラムに対して、一部の命令を書き換えることにより、要件定義を満たすプログラム。</p>
+          <p>レベル２（初級）</p>
+          <p>実際に動作するベースプログラムに対して、一部分の処理を参考に追加することにより、要件定義を満たすプログラム。</p>
+        </div>
+      </div>
+    </div>
+    <section class="page-contain">
+      <a th:href="@{/step1}" class="data-card easy">
+        <h3>STEP-1</h3>
+        <h4>基礎: ページ表示</h4>
+        <p>ページを表示してみよう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step2}" class="data-card easy">
+        <h3>STEP-2</h3>
+        <h4>基礎: GETパラメータの取得</h4>
+        <p>あいさつを返してみよう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step3}" class="data-card easy">
+        <h3>STEP-3</h3>
+        <h4>初級: 入力フォームを作ってみよう</h4>
+        <p>入力項目を増やしてみよう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step4}" class="data-card easy">
+        <h3>STEP-4</h3>
+        <h4>初級: データを表示してみよう</h4>
+        <p>表示項目を増やしてみよう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step5}" class="data-card easy">
+        <h3>STEP-5</h3>
+        <h4>基礎: BootstrapでWEBページを装飾しよう</h4>
+        <p>WEBページを装飾しよう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step6}" class="data-card easy">
+        <h3>STEP-6</h3>
+        <h4>基礎: バリデーション機能を追加しよう</h4>
+        <p>バリデーション機能(入力チェック機能)を追加しましょう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step7}" class="data-card easy">
+        <h3>STEP-7</h3>
+        <h4>初級: Serviceクラスについて学習しよう</h4>
+        <p>コメント検索機能を改修しましょう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+      <a th:href="@{/step8}" class="data-card easy">
+        <h3>STEP-8</h3>
+        <h4>初級: Daoクラスについて学習しよう</h4>
+        <p>コメント削除機能を追加しましょう.</p>
+        <span class="link-text">
+          Let's try!
+          <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z"
+              fill="#753BBD" />
+          </svg>
+        </span>
+      </a>
+    </section>
+  </div>
+
+  <div class="footer l-box">
+    <p>footer</p>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gradle Build",
+      "type": "shell",
+      "command": "gradle build -x test"
+    },
+    {
+      "label": "Gradle Build:Refresh",
+      "type": "shell",
+      "command": "gradle build --refresh-dependencies -x test"
+    },
+    {
+      "label": "Gradle Run",
+      "type": "shell",
+      "command": "gradle clean run",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Gradle Clean",
+      "type": "shell",
+      "command": "gradle clean"
+    },
+    {
+      "label": "Gradle Check",
+      "type": "shell",
+      "command": "gradle check"
+    },
+    {
+      "label": "Gradle eclipse",
+      "type": "shell",
+      "command": "gradle eclipse"
+    },
+    {
+      "label": "Gradle test",
+      "type": "shell",
+      "command": "gradle test"
+    },
+  ]
+}

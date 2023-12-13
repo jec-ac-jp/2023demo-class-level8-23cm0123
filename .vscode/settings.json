@@ -1,0 +1,20 @@
+{
+  "debug.inlineValues": true,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.formatOnSave": true,
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.checkstyle.configuration": "styles/checkstyle.xml",
+  "java.format.enabled": true,
+  "java.format.settings.profile": "GoogleStyle",
+  "java.format.settings.url": "styles/eclipse-java-google-style.xml",
+  "[java]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.project.sourcePaths": [
+    "src/main/java/com/example/project"
+  ],
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.compile.nullAnalysis.mode": "automatic"
+}

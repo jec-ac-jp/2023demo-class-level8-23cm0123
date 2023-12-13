@@ -1,0 +1,9 @@
+CREATE TABLE comment
+(
+   id INT NOT NULL AUTO_INCREMENT,
+   name VARCHAR(100) NOT NULL,
+   content VARCHAR(500) NOT NULL,
+   mail VARCHAR(100) NOT NULL,
+   created DATETIME NOT NULL,
+   PRIMARY KEY(id)
+);
