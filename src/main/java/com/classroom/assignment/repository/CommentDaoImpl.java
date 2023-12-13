@@ -65,6 +65,7 @@ public class CommentDaoImpl implements CommentDao {
   public void deleteComment(int id) {
     // STEP-8 削除処理のSQLを追加しましょう。
     // 削除も「jdbcTemplate.update」を使ってください。
-
+    jdbcTemplate.update("DELETE FROM comment WHERE id = " + id);
+    // jdbcTemplate.update("DELETE FROM comment WHERE id = ? ", id);
   }
 }
